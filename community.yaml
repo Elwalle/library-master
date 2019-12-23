@@ -1,0 +1,195 @@
+data:
+  laravel:
+    templates:
+      - location: https://raw.githubusercontent.com/luciddreamz/laravel-ex/master/openshift/templates/laravel-mysql.json
+        docs: https://github.com/luciddreamz/laravel-ex/blob/master/readme.md
+        tags:
+          - online-starter
+          - online-professional
+      - location: https://raw.githubusercontent.com/luciddreamz/laravel-ex/master/openshift/templates/laravel-postgresql.json
+        docs: https://github.com/luciddreamz/laravel-ex/blob/master/readme.md
+      - location: https://raw.githubusercontent.com/luciddreamz/laravel-ex/master/openshift/templates/laravel-sqlite.json
+        docs: https://github.com/luciddreamz/laravel-ex/blob/master/readme.md
+  memcached:
+    templates:
+      - location: https://raw.githubusercontent.com/oprudkyi/openshift-templates/master/memcached/memcached.yaml
+        docs: https://github.com/oprudkyi/openshift-templates/blob/master/memcached/README.md
+  mailcatcher:
+    templates:
+      - location: https://raw.githubusercontent.com/oprudkyi/openshift-templates/master/mailcatcher/mailcatcher.yaml
+        docs: https://github.com/oprudkyi/openshift-templates/blob/master/mailcatcher/README.md
+  swift:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/dudash/s2i-swift/master/openshift-resources/swift-all-ubuntu14-imagestreamlist.json
+        docs: https://github.com/dudash/s2i-swift/blob/master/README.md
+        regex: swift
+        suffix: ubuntu14
+  wildfly:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/wildfly/wildfly-s2i/current/imagestreams/wildfly-centos7.json
+        docs: https://github.com/wildfly/wildfly-s2i/blob/current/README.md
+        regex: wildfly
+        suffix: centos7
+        tags:
+          - okd
+          - online-starter
+          - online-professional
+      - location: https://raw.githubusercontent.com/wildfly/wildfly-s2i/current/imagestreams/wildfly-runtime-centos7.json
+        docs: https://github.com/wildfly/wildfly-s2i/blob/current/README.md
+        regex: wildfly-runtime
+        suffix: centos7
+        tags:
+          - okd
+          - online-starter
+          - online-professional
+    templates:
+    - location: https://raw.githubusercontent.com/wildfly/wildfly-s2i/current/templates/wildfly-s2i-chained-build-template.yml
+      docs: https://github.com/wildfly/wildfly-s2i/blob/current/doc/wildfly-s2i-chained-build-template.md
+      tags:
+          - okd
+          - online-starter
+          - online-professional
+  infinispan:
+    templates:
+    - location: https://raw.githubusercontent.com/infinispan/infinispan-openshift-templates/master/infinispan-ephemeral.yaml
+      docs: https://github.com/infinispan/infinispan-openshift-templates/blob/master/README.asciidoc
+    - location: https://raw.githubusercontent.com/infinispan/infinispan-openshift-templates/master/infinispan-persistent.yaml
+      docs: https://github.com/infinispan/infinispan-openshift-templates/blob/master/README.asciidoc
+  ruby:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/s2i-ruby-container/master/imagestreams/ruby-centos7.json
+        docs: https://github.com/sclorg/s2i-ruby-container/blob/master/README.md
+        regex: ruby
+        suffix: centos7
+        tags:
+          - okd
+  python:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/s2i-python-container/master/imagestreams/python-centos7.json
+        docs: https://github.com/sclorg/s2i-python-container/blob/master/README.md
+        regex: python
+        suffix: centos7
+        tags:
+          - okd
+  nodejs:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/nodeshift/centos7-s2i-nodejs/master/imagestreams/nodejs-centos7.json
+        docs: https://github.com/nodeshift/centos7-s2i-nodejs/blob/master/README.md
+        regex: nodejs
+        suffix: centos7
+        tags:
+          - okd
+  perl:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/s2i-perl-container/master/imagestreams/perl-centos7.json
+        docs: https://github.com/sclorg/s2i-perl-container/blob/master/README.md
+        regex: perl
+        suffix: centos7
+        tags:
+          - okd
+  php:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/s2i-php-container/master/imagestreams/php-centos7.json
+        docs: https://github.com/sclorg/s2i-php-container/blob/master/README.md
+        regex: php
+        suffix: centos7
+        tags:
+          - okd
+  httpd:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/httpd-container/master/imagestreams/httpd-centos7.json
+        docs: https://github.com/sclorg/httpd-container/blob/master/README.md
+        regex: httpd
+        suffix: centos7
+        tags:
+          - okd
+  jenkins:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/openshift/jenkins/master/openshift/imagestreams/jenkins-centos7.json
+        docs: https://github.com/openshift/origin/blob/master/examples/jenkins/README.md
+        regex: jenkins
+        suffix: centos7
+        tags:
+          - okd
+      - location: https://raw.githubusercontent.com/openshift/jenkins/master/openshift/imagestreams/jenkins-agent-maven-centos7.json
+        docs: https://github.com/openshift/origin/blob/master/examples/jenkins/README.md
+        regex: jenkins-agent-maven
+        suffix: centos7
+        tags:
+          - okd
+      - location: https://raw.githubusercontent.com/openshift/jenkins/master/openshift/imagestreams/jenkins-agent-nodejs-centos7.json
+        docs: https://github.com/openshift/origin/blob/master/examples/jenkins/README.md
+        regex: jenkins-agent-nodejs
+        suffix: centos7
+        tags:
+          - okd
+  mariadb:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/mariadb-container/master/imagestreams/mariadb-centos7.json
+        docs: https://github.com/sclorg/mariadb-container/blob/master/README.md
+        regex: mariadb
+        suffix: centos7
+        tags:
+          - okd
+  mongodb:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/mongodb-container/master/imagestreams/mongodb-centos7.json
+        docs: https://github.com/sclorg/mongodb-container/blob/master/README.md
+        regex: mongodb
+        suffix: centos7
+        tags:
+          - okd
+  mysql:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/mysql-container/master/imagestreams/mysql-centos7.json
+        docs: https://github.com/sclorg/mysql-container/blob/master/README.md
+        regex: mysql
+        suffix: centos7
+        tags:
+          - okd
+  nginx:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/nginx-container/master/imagestreams/nginx-centos7.json
+        docs: https://github.com/sclorg/nginx-container/blob/master/README.md
+        regex: nginx
+        suffix: centos7
+        tags:
+          - okd
+  postgresql:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/postgresql-container/master/imagestreams/postgresql-centos7.json
+        docs: https://github.com/sclorg/postgresql-container/blob/master/README.md
+        regex: postgresql
+        suffix: centos7
+        tags:
+          - okd
+  redis:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/redis-container/master/imagestreams/redis-centos7.json
+        docs: https://github.com/sclorg/redis-container/blob/master/README.md
+        regex: redis
+        suffix: centos7
+        tags:
+          - okd
+  dotnet:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/redhat-developer/s2i-dotnetcore/master/dotnet_imagestreams_centos.json
+        docs: https://github.com/redhat-developer/s2i-dotnetcore/blob/master/README.md
+        suffix: centos7
+        tags:
+          - okd
+  golang:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/sclorg/golang-container/master/imagestreams/golang-centos7.json
+        docs: https://github.com/sclorg/golang-container/blob/master/README.md
+        suffix: centos7
+        tags:
+          - okd
+  openliberty:
+    imagestreams:
+      - location: https://raw.githubusercontent.com/OpenLiberty/open-liberty-s2i/master/imagestreams/openliberty-ubi-min.json
+        docs: https://github.com/OpenLiberty/open-liberty-s2i/blob/master/README.md
+        tags:
+          - okd
+          - online-starter
+          - online-professional
